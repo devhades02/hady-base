@@ -1,4 +1,23 @@
 <div align="center">
+
+  # 🤖 Hady-Base
+
+Bot desarrollado en **Node.js**
+
+## 📦 Estado del repositorio
+![Repo Size](https://img.shields.io/github/repo-size/devhades02/hady-base)
+![Last Commit](https://img.shields.io/github/last-commit/devhades02/hady-base)
+![Stars](https://img.shields.io/github/stars/devhades02/hady-base?style=social)
+
+## ⚙️ Tecnologías
+- Node.js
+- JavaScript
+- Baileys
+
+## 🧠 Notas
+- El tamaño mostrado corresponde al repositorio en GitHub
+- `node_modules` no está incluido
+- Ideal para VPS gratuitos o de bajos recursos
   <img src="https://files.catbox.moe/4dt7iv.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block; border-radius: 10px;">
 </div>
 
