@@ -204,7 +204,7 @@ async function startingBot() {
     console.log(chalk.hex('#00FFFF')(`📱 Pairing: https://tu-app.railway.app/pair?number=51929264225\n`));
 
     const store = await makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
-    const { state, saveCreds } = await useMultiFileAuthState('session');
+    const { state, saveCreds } = await useMultiFileAuthState('/data/session');
     const { version, isLatest } = await fetchLatestBaileysVersion()
 
     const sock = makeWASocket({
@@ -414,13 +414,4 @@ process.on('unhandledRejection', (err) => {
 });
 
 // Auto-reload en cambios
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-    fs.unwatchFile(file)
-    console.log(chalk.hex('#FFD700')('┌────────────────────────────────────────┐'));
-    console.log(chalk.hex('#FFD700')(`│          🔄 UPDATE DETECTED            │`));
-    console.log(chalk.hex('#FFD700')(`│        File: ${path.basename(__filename)}        │`));
-    console.log(chalk.hex('#FFD700')('└────────────────────────────────────────┘'));
-    delete require.cache[file]
-    require(file)
-});
+//se elimino por ram
