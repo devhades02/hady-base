@@ -39,5 +39,8 @@
     "whatsapp-bot"
   ],
   "author": "Nimzz",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  }
 }
